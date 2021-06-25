@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Origami Designing Website | Html and css | by devarala naga durga</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <section>
+      <header>
+        <a href="#" class="logo">Origami.</a>
+        <div class="toggle" onclick="menuToggle();"></div>
+      </header>
+      <div class="glass"></div>
+      <div class="content">
+        <h2>Happiness...<br><span>is a flock of Origami birds</span></h2>
+      </div>
+      <video src="video.mp4" autoplay muted loop></video>
+      <ul class="sci">
+        <li style="--i:1"><a href="https://github.com/durga-555">Github</a></li>
+      <li style="--i:2"><a href="https://community.whitehatjr.com/profile/4ba9b612-dd21-4575-bc46-52178412ef09">White Hat jr</a></li>
+      </ul>
+      <ul class="navigation">
+        <li style="--i:1"><a href="home.html">Home</a></li>
+      <li style="--i:2"><a href="durga.html">About Me</a></li>
+      <li style="--i:3"><a href="origami.html">Origami</a></li>
+      <li style="--i:4"><a href="contact.html">Contact</a></li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function menuToggle(){
+        const toggleMenu = document.querySelector('.toggle');
+        const section = document.querySelector('section');
+        toggleMenu.classList.toggle('active');
+        section.classList.toggle('active');
+      }
+    </script>
+</body>
+</html>

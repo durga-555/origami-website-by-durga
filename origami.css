@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    z-index: 50;
+}
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 100px;
+}
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+    border: 3px solid #111;
+    border-radius: 13px;
+    z-index: 75;
+}
+.container .card:hover{
+    height: 360px;
+}
+.container .card .imgBx{
+    position: relative;
+    max-width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    border: 2px solid #111;
+    border-radius: 7px;
+}
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover .content{
+    text-decoration: none;
+    visibility: visible;
+    opacity: 1;
+    margin-top: -60px;
+    transition-delay: .0.3s;
+}
+.container .card .content h2{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+}
+.container .card .content p{
+    text-decoration: none;
+    font-family:'Montserrat', sans-serif;;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    font-size: 2.5em;
+    color: #111;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+header h2{
+    position: relative;
+    right: 10%;
+}
